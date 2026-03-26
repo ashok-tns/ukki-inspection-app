@@ -1,0 +1,49 @@
+{
+  "cli": {
+    "version": ">= 10.0.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "APP_ENV": "dev"
+      }
+    },
+    "preview-dev": {
+      "distribution": "internal",
+      "env": {
+        "APP_ENV": "dev"
+      },
+      "channel": "dev"
+    },
+    "preview-stage": {
+      "distribution": "internal",
+      "env": {
+        "APP_ENV": "stage"
+      },
+      "channel": "stage"
+    },
+    "production-dev": {
+      "env": {
+        "APP_ENV": "dev"
+      },
+      "channel": "dev"
+    },
+    "production-stage": {
+      "env": {
+        "APP_ENV": "stage"
+      },
+      "channel": "stage"
+    },
+    "production": {
+      "env": {
+        "APP_ENV": "prod"
+      },
+      "channel": "production"
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
